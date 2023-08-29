@@ -32,6 +32,17 @@ function App() {
     setTaskToUpdate(task)
   }
 
+  const updateTask = (id: number, title: string, difficulty: number): void => {
+    const updatedTask: ITask = { id, title, difficulty }
+
+    const updatedItems = taskList.map((task) =>
+      task.id === updatedTask.id ? updatedTask : task
+    )
+    
+    setTaskList(updatedItems)
+    hideOrShowModal()
+  }
+
 
   return (
     <div>
@@ -41,6 +52,7 @@ function App() {
             btnText='Editar Tarefa'
             taskList={taskList}
             task={taskToUpdate}
+            handleUpdate={updateTask}
           />
         }
       />
