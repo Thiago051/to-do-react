@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #282c34;
+    background-color: var(--gray);
     color: #fff;
     /*  */
     position: fixed;
@@ -13,5 +13,5 @@
 
 .footer span {
     font-weight: bold;
-    color: #61dafb;
+    color: var(--blue);
 }
