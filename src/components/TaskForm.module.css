@@ -1,0 +1,37 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form input {
+    padding: 8px 15px;
+    margin-bottom: 1.5em;
+    border-radius: 0;
+    border: 1px solid var(--gray);
+}
+
+.form input[type="submit"] {
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    color: #000;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #fff;
+    border-color: var(--gray);
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form label span {
+    font-weight: bold;
+    margin-bottom: .4em;
+}
