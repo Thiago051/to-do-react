@@ -1,7 +1,15 @@
+// components
+import Footer from "./components/Footer"
+import Header from "./components/Header"
+
 function App() {
 
   return (
-    <div>TODO REACT</div>
+    <div>
+      <Header />
+      <h1>Conteúdo...</h1>
+      <Footer />
+    </div>
   )
 }
 
