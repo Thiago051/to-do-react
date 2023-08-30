@@ -18,6 +18,7 @@ const Modal = ({ children }: Props) => {
         <div id="modal" className="hide">
             <div className={styles.fade} onClick={closeModal}></div>
             <div className={styles.modal}>
+            <i className="bi bi-x-circle" onClick={closeModal}></i>
                 <h2>Texto modal</h2>
                 {children}
             </div>

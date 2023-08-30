@@ -29,3 +29,18 @@
 .modal form {
     width: 90%;
 }
+
+.modal i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: var(--gray);
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.modal i:hover {
+    color: #ff0000;
+}
